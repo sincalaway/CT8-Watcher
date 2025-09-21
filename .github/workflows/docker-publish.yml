@@ -1,12 +1,7 @@
 name: Build and Push Docker Image
 
 on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - 'requirements.txt'
-      - 'app.py'
-      - 'Dockerfile'
+  workflow_dispatch:   # ✅ 手动触发
 
 env:
   IMAGE_NAME: ct8-watcher
